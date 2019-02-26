@@ -1,0 +1,237 @@
+@font-face{
+    font-family: iran;
+    src: url(Font/IRANSansWeb.woff) format('woff') ;
+}
+@font-face{
+    font-family: iran-black;
+    src: url(Font/IRANSansWeb_Black.woff) format('woff') ;
+}
+@font-face{
+    font-family: iran-light;
+    src: url(Font/IRANSansWeb_Light.woff) format('woff') ;
+}
+@font-face{
+    font-family: iran-medium;
+    src: url(Font/IRANSansWeb_Medium.woff) format('woff') ;
+}
+@font-face{
+    font-family: iran-bold;
+    src: url(Font/IRANSansWeb_Bold.woff) format('woff') ;
+}
+@font-face{
+    font-family: aviny;
+    src: url(Font/aviny.ttf) format('truetype') ;
+}
+
+*{
+    direction: ltr;
+    font-family: iran;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div{
+    direction: rtl;
+    text-align: right;
+    color: #4b4b4b;
+}
+
+#nav-main{
+    width: 6%;
+    background: white;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+#body{
+    width: 94%;
+    position: fixed;
+    height: 100%;
+    background: #f7f7f7;
+    overflow: auto;
+}
+#nav-main .icon{
+    height: 37px;
+    width: 37px;
+    text-align: center;
+    display: table;
+    margin: 20px auto -15px;
+    /* padding: 5px 0; */
+    box-sizing: unset;
+    border-top: 1px solid ghostwhite;
+    padding: 10px 0;
+}
+#select-menu-li{
+    background: #673AB7;
+    padding: 0px 0px !important;
+    position: relative;
+    right: 10%;
+    z-index: 2;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 110%;
+}
+#select-menu-img{
+    border-top: none !important;
+}
+
+#image-profile{
+    height: 55px;
+    width: 55px;
+    display: table;
+    margin: 30px auto;
+    border-radius: 50%;
+}
+#list-menu li{
+    list-style: none;
+    cursor: pointer;
+}
+#list-menu{
+    padding: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .desktop{
+        display: none;
+    }
+    #body{
+        width: 100%;
+        top:55px;
+    }
+    .mobile{
+        display: block !important;
+    }
+}
+.card{
+    overflow: hidden;
+}
+.container-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 18px;
+}
+.py-5{
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+}
+.container-img h6{
+    display: inline-block;
+    font-family: iran-medium;
+    font-size: 20px;
+}
+.visit-location{
+    width: 90%;
+    display: table;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 16px;
+}
+.container-img ul {
+    list-style: none;
+    position: absolute;
+    right: 129px;
+    top: 50px;
+}
+.container-img{
+    position: relative;
+}
+.container-img ul li h5{
+    font-size: 12px;
+}
+.mt-3, .my-3 {
+    margin-top: 0 !important;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.adviser{
+    margin-top: 12px;
+}
+.price{
+    position: absolute;
+    left: 0;
+    height: 39px;
+    width: 96px;
+    border: 1px solid #673AB7;
+    border-left: none;
+    border-radius: 0 51px 51px 0;
+    bottom: 90px;
+    text-align: center;
+    line-height: 39px;
+    color: #673AB7;
+}
+.options img{
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.title-part{
+    margin: 25px 18px;
+    font-family: iran-medium;
+}
+.seprate{
+    height: 5px;
+    background: #dedede;
+    margin: 30px 15px;
+}
+.fill-seprate{
+    height: 5px;
+    background: #8162b7;
+    width: 22%;
+}
+.img-filter{
+    height: 40px;
+    background: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+.search{
+    height: 40px;
+    border: none;
+    border-radius: 33px;
+    box-shadow: 0 3px 2px rgba(233,236,239,.05);
+    margin: 0 10px;
+    width: 300px;
+    padding: 0 30px 0 0;
+    direction: rtl;
+    color: #545454;
+}
+.search:focus{
+    outline: none;
+}
+.add-location{
+    position: fixed;
+    left: 13px;
+    bottom: 10px;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    padding: 4px 9px;
+    display: none;
+}
+
+.alert-danger{
+    background: none;
+    color: #ed0000 !important;
+    direction: rtl;
+    text-align: right;
+    border: 1px solid red;
+}
+.alert-danger ul{
+    direction: rtl;
+    padding-right: 10px;
+}
+.alert-danger ul li{
+    direction: rtl;
+    text-align: right;
+}
+
+.modal *{
+    direction: ltr !important;
+    text-align: center !important;
+    color: white !important;
+
+}
+.phpdebugbar-minimized{
+    display:none;
+}

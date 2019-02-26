@@ -1,0 +1,162 @@
+
+#writer{
+    vertical-align: middle;
+    margin-top: 23px;
+    margin-right: -20px;
+}
+#writer h6{
+    font-size: 15px;
+    line-height: 1px;
+}
+#writer p{
+    font-size: 13px;
+    text-align: justify;
+    color: gray;
+}
+#price h6{
+    border: 1px solid #673AB7;
+    color: #673AB7;
+    border-left: none;
+    padding: 7px 17px;
+    border-radius: 0px 25px 25px 0px;
+    line-height: 24px;
+    position: relative;
+    left: -15px;
+    margin-top: 7px;
+}
+#name{
+    line-height: 45px;
+    padding-right: 0;
+}
+#content p{
+    text-align: justify;
+    /*padding-left:30px;*/
+    color: #646464;
+    font-family: iran;
+    font-size: 15px;
+}
+#transport div img{
+    height: 55px;
+    margin: 0 2px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 3px;
+}
+#transport>h5{
+    width: 100%;
+    font-size: 15px;
+    font-family: iran-medium;
+}
+
+
+#sidebar-content{
+    border-right: 2px solid #f6f6f6;
+    margin: 10px 0;
+}
+#information h4 img{
+    height: 27px;
+}
+#information{
+    margin-top: 20px;
+    padding-left: 35px;
+    padding-right: 20px;
+    border-top: 2px solid #f6f6f6;
+    padding-top: 8px;
+    position: relative;
+}
+#like-comment{
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+#like-comment span{
+    font-size: 15px;
+    color: #939292;
+    vertical-align: middle;
+}
+
+#send-text{
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    border-top: 2px solid #f6f6f6;
+}
+#send-text div input{
+    width: calc(100% - 50px);
+    height: 50px;
+    border: none;
+    font-size: 13px;
+    text-align: right;
+    padding: 0 11px;
+    color: #4f4f4f;
+    direction: rtl;
+}
+#send-text div input:focus{
+    outline: none;
+}
+#send-text img{
+    height: 36px;
+    transform: rotate(-132deg);
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    left: 6px;
+}
+#time-tel ul{
+    display: inline-block;
+}
+#time-tel ul li{
+    display: inline-block;
+    margin: 0px 7px;
+}
+#time-tel ul li h6{
+    text-align: center;
+    font-size: 14px;
+}
+#time-tel{
+    padding: 20px 30px 0px 30px;
+}
+#time-tel li img{
+    height: 37px;
+    vertical-align: -6px;
+}
+
+#row-tel button{
+    vertical-align: 7px;
+    direction: rtl;
+}
+#image-map{
+    height: 113px;
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+    border-radius: 23px;
+}
+#time-tel button{
+    position: absolute;
+    left: 0;
+    top: 23px;
+    border-radius: 0 38px 38px 0;
+}
+
+@media  screen and (max-width: 480px) {
+    .carousel-item img{
+        height: auto !important;
+    }
+    #information-lg{
+        padding-right: 24px;
+    }
+    #information-user .col-lg-3 , #information-user .col-lg-8{
+        width: auto;
+        display: inline-block;
+    }
+    #comment{
+        padding-right: 24px;
+    }
+    #comment .row .col-lg-3 , #comment .row .col-lg-8{
+        width: auto;
+        display: inline-block;
+    }
+}

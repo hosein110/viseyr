@@ -1,0 +1,147 @@
+
+
+.title-main{
+    margin: 0px 15px -10px 0;
+    font-family: iran-medium;
+    color: #636262;
+}
+#description-ul{
+    list-style: none;
+    width: 100%;
+    margin: 10px 15px;
+    padding: 0;
+}
+#description-ul li{
+    margin: 10px 0;
+}
+.display-none{
+    display: none ;
+}
+/*.display-block{*/
+    /*display: block !important;*/
+/*}*/
+
+
+#description-ul h4{
+    margin:10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+#description-ul h4 input{
+    padding: 0 50px 0 0;
+}
+#description-ul img{
+    height: 30px;
+    margin: 0 0 0 7px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.min{
+    display: none;
+}
+.options{
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    max-width: 115px;
+    margin: 0 10px;
+}
+.options img{
+    height: 70px;
+    display: table;
+    margin: 0 auto;
+}
+.options h6{
+    text-align: center;
+}
+.options input{
+    margin: 5px auto;
+    display: table;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+    .options {
+        border: 1px solid #c8c8c8;
+        border-radius: 4px;
+        max-width: 90px;
+        margin: 5px 5px;
+    }
+    .options h6 {
+        text-align: center;
+        font-size: 12px;
+    }
+    .options img {
+        height: 45px;
+        display: table;
+        margin: 0 auto;
+    }
+}
+.images .card-body{
+    border: 1px solid #673AB7;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
+    border-radius: 2px;
+    height: 188px;
+    margin: 5px 10px;
+    padding: 0;
+}
+.icon-add-image{
+    height: 40px;
+    display: table;
+    margin: 73px auto;
+
+}
+.image-preview{
+    width: 100%;
+    padding: 1px;
+}
+
+.images .col-md-2{
+    padding: 0 !important;
+}
+
+.work-time{
+    width: 33px;
+    border: none;
+    border-bottom: 1.5px solid #c6c6c6;
+    text-align: center;
+}
+.work-time:focus{
+    outline: none;
+    border-bottom: 1.5px solid #673ab7;
+}
+#div-time-work div{
+    margin: 7px 10px;
+}
+
+#private-mood{
+    border: 1px solid gainsboro;
+    padding: 3px 8px;
+    border-radius: 3px;
+    position: relative;
+}
+#div-time-work div h6{
+    display: inline-block;
+    vertical-align: -2px;
+    font-size: 16px;
+    margin: 0 0px 0px 13px;
+    min-width: 57px;
+}
+
+@media screen and (max-width: 480px) {
+    .work-time {
+        width: 47px;
+        border: none;
+        border-bottom: 1.5px solid #c6c6c6;
+        text-align: center;
+    }
+    #div-time-work div h6 {
+        display: inline-block !important;
+        vertical-align: -2px !important;
+        font-size: 20px !important;
+        margin: 0 0px 0px 13px !important;
+        min-width: 76px;
+    }
+}
