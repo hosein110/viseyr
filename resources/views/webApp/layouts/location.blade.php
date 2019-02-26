@@ -186,9 +186,9 @@
                                             <img src="/assets/img/icons/star-fill.png" alt="">
                                         </div>
                                         <div id="like-comment">
-                                            <span>{{$result->comments_count}}</span>
+                                            <span>{{$result->likes_count}}</span>
                                             <img src="/assets/img/icons/like.png" alt="لایک">
-                                            <span style="margin-right:15px;">{{$result->likes_count}}</span>
+                                            <span itemprop="commentCount" style="margin-right:15px;">{{$result->comments_count}}</span>
                                             <img src="/assets/img/icons/chat.png" alt="نظرات">
                                         </div>
                                     </h4>
@@ -279,25 +279,18 @@
                             </div>
 
                             <div id="sidebar-content" class="col-lg-4">
+
                                 <div id="comments">
-                                    <div style="padding-top: 10px;" class="row">
+                                    <div style="padding-top: 10px;" class="row per-comment">
                                         <div class="col-lg-3">
                                             <img src="/assets/img/theme/team-2-800x800.jpg" alt="Circle image" class="img-fluid rounded-circle" style="/* width: 99px; */height: 60px;">
                                         </div>
-                                        <div id="writer" class="col-lg-8">
+                                        <div itemscope itemtype="https://schema.org/Comment"  id="writer" class="col-lg-8">
                                             <h6>نام فرد</h6>
-                                            <p>اطلاعاتی در مورد شخص</p>
+                                            <p itemprop="comment">اطلاعاتی در مورد شخص</p>
                                         </div>
                                     </div>
-                                    <div style="padding-top: 10px;" class="row">
-                                        <div class="col-lg-3">
-                                            <img src="/assets/img/theme/team-2-800x800.jpg" alt="Circle image" class="img-fluid rounded-circle" style="/* width: 99px; */height: 60px;">
-                                        </div>
-                                        <div id="writer" class="col-lg-8">
-                                            <h6>نام فرد</h6>
-                                            <p>اطلاعاتی در مورد شخص</p>
-                                        </div>
-                                    </div>
+
                                 </div>
 
                                 <div style="height: 62px"></div>

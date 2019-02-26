@@ -2,7 +2,7 @@
 
 namespace App;
 
-//use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
@@ -13,7 +13,7 @@ use Carbon\Carbon;
 
 class Location extends Model
 {
-//    use Sluggable;
+    use Sluggable;
 
 
     protected $fillable = [
@@ -22,14 +22,14 @@ class Location extends Model
 
 
 
-//    public function sluggable()
-//    {
-//        return [
-//            'slug' => [
-//                'source' => 'name'
-//            ]
-//        ];
-//    }
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 
 
     public function user()

@@ -768,7 +768,7 @@ class locationController extends Controller
         return view('webApp.layouts.locations');
     }
 
-    public function locationPage($id){
+    public function locationPage($slug){
         $user_id = 3;
 
         $result = Location::leftjoin('users', 'users.id', '=', 'locations.user_id')
@@ -818,7 +818,7 @@ class locationController extends Controller
             ->with(array("pins" => function ($q) use ($user_id) {
                 return $q->where('location_pins.is_pin', 1)->where('location_pins.user_id', $user_id);
             }))
-            ->where('locations.id', $id)
+            ->where('locations.slug', $slug)
             ->groupBy("locations.id")
             ->get();
 

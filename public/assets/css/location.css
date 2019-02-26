@@ -155,8 +155,14 @@
     #comment{
         padding-right: 24px;
     }
-    #comment .row .col-lg-3 , #comment .row .col-lg-8{
+    #writer , .per-comment .col-lg-3{
         width: auto;
         display: inline-block;
+    }
+    .per-comment{
+        padding-right: 15px;
+    }
+    #title-comments{
+        padding-right: 15px;
     }
 }

@@ -108,7 +108,7 @@ Route::namespace('web')->group(function () {
 
     Route::get('/', 'ApplicationController@home')->name('home');
     Route::get('/locations', 'locationController@locationsPage')->name('locationsPage');
-    Route::get('/location/{id}', 'locationController@locationPage')->name('locationPage');
+    Route::get('/location/{slug}', 'locationController@locationPage')->name('locationPage');
     Route::get('/addLocation', 'locationController@addLocationPage')->name('addLocationPage');
     Route::post('/addLocationRequest', 'locationController@addLocationRequest')->name('addLocationRequest');
     Route::post('/cityShowRequest', 'locationController@cityShowRequest')->name('cityShowRequest');
